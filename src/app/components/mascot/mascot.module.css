@@ -1,0 +1,178 @@
+.topcopycontainer {
+    height: 100px;
+    width: 900px;
+    margin-top: 10vh;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ 
+    font-family: var(--font-logo);
+    font-weight: 800;
+    font-size: clamp(45px, 4vw, 55px);
+    line-height: 0.75;
+    -webkit-font-smoothing: antialiased;
+ }
+
+ .topcopycontainer > :first-child {
+    color: white;
+    filter: drop-shadow(1px 1px 4px rgba(0,0,0, 0.6));
+ }
+
+ .topcopycontainer >:last-child {
+    filter: invert(1)
+ }
+ 
+ .sectionmascotcontainer {
+    margin: 0px -20px;
+    filter: invert(1);
+ }
+ 
+ .sectioncontainer {
+    display: flex;
+    align-items: flex-end;
+ 
+    font-family: "Josefin Sans", serif;
+    font-weight: 800;
+    font-size: clamp(40px, 4vw, 60px);
+    line-height: 0.55;
+ }
+ 
+ .nav {
+    /* this class must match the navoptionfocused class from home module for animation */
+    height: 60px;
+    min-width: 250px;
+    margin: 0px 0px 35px -130px;
+ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+ }
+ 
+ .verticaldivider {
+    width: 3px;
+    height: 60px;
+    margin: 0px 10px;
+ 
+    background-color: white;
+    opacity: 0.5;
+    filter: brightness(0.96) drop-shadow(2px 3px 1px rgba(0,0,0,0.2)) drop-shadow(-2px -1px 1px rgba(255,255,255,0.1));
+ }
+ 
+ .back {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+ 
+    cursor: pointer;
+    filter: drop-shadow(2px 3px 3px rgba(0,0,0,0.5));
+ 
+    transition: all 0.3s ease-out;
+    will-change: transform, filter;
+    opacity: 0.5
+ }
+ 
+ .back:hover {
+    transform: translateX(-10%) scaleX(1.05);
+    filter: drop-shadow(6px 6px 2px rgba(0,0,0,0.5));
+    transition: all 0.2s ease-out;
+    opacity: 1
+ }
+ 
+ .logo {
+    position: relative;
+    width: 60px !important;
+    height: 60px !important;
+ 
+    filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.5));
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+ }
+ 
+ .sectiontext {
+    margin-left: 10px;
+    padding-top: 12px;
+ 
+    color: white;
+    font-family: var(--font-highlight);
+    font-size: 2.8rem;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.5));
+ }
+ 
+ @media screen and (max-width: 1200px) {
+    .nav {
+        /* this class must match the navoptionfocused class from home module for animation */
+        margin: 0px 0px 35px 0px;
+    }
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .nav {
+        /* this class must be synced with the navoptionfocused class from home module for animation */
+        height: 50px;
+        margin: 0px 0px 25px 0px;
+        padding-right: 10px;
+    }
+ 
+    .topcopycontainer {
+        margin-top: -3vh;
+    }
+ 
+    .topcopymascotcontainer {
+        margin-bottom: -5px;
+        scale: 0.9;
+    }
+ 
+    .sectiontext {
+        padding-top: 18px;
+        font-size: 6.8vw;
+        font-size: clamp(1px, 6.8vw, 40px);
+    }
+ 
+    .back {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 8px;
+    }
+ 
+    .sectionmascotcontainer {
+        margin: -10px -21px;
+        scale: 0.8;
+    }
+ 
+    .logo {
+        position: relative;
+        margin: -7px -10px;
+        scale: 0.8;
+    }
+ 
+    .verticaldivider {
+        height: 50px;
+        margin: 0px 5px;
+    }
+ }
+ 
+ @media only screen and (max-height: 500px) and (orientation: landscape) {
+    .topcopycontainer {
+        margin-top: -25vh;
+        scale: 0.9;
+    }
+ 
+    .nav {
+        height: 50px;
+        margin-top: -15vh;
+        scale: 0.8;
+    }
+ 
+    .verticaldivider {
+        height: 50px;
+        margin: 0px 5px;
+    }
+ 
+    .back {
+        margin: 0;
+    }
+ }

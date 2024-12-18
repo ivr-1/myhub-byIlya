@@ -1,0 +1,150 @@
+.cardcontainer {
+  display: flex;
+
+  max-width: clamp(0px, 95vw, 1800px);
+  padding-top: 25px;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  overflow: none;
+}
+
+.card, .largecard {
+  display: flex;
+
+  width: 35rem;
+  border-radius: 15px;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: rgba(255, 255, 255, 0.05); 
+
+  color: #eeeeee;
+  box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.2),
+              -4px -4px 10px rgba(245, 175, 210, 0.5);
+}
+
+.largecard {
+  width: 71.5rem;
+  min-height: 240px;
+
+  justify-content: center;
+  gap: 40px;
+}
+
+.cardlogo {
+  display: flex;
+
+  height: 55%;
+  width: 30%;
+
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0.2;
+}
+
+.cardlogo >:first-child {
+  height: 100%;
+  width: 80%;
+}
+
+.largecard .cardlogo {
+  width: 25%;
+
+  opacity: 0.2;
+}
+
+.largecard .cardlogo >:first-child {
+  width: 70%;
+  height: auto;
+}
+
+.cardtext {
+  display: flex;
+
+  margin: 25px 0px 25px 15px;
+
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card h1, .largecard h1 {
+  padding: 6px 0;
+
+  font-family: var(--font-highlight);
+  letter-spacing: -0.9;
+  font-size: 1.8rem;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+
+  color: rgb(255, 255, 255);
+
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.3));
+}
+
+.card ul, .largecard ul {
+  display: flex;
+
+  padding: 0;
+
+  flex-direction: column;
+  gap: 10px;
+
+  list-style: none;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(234, 234, 234);
+}
+
+.largecard ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 170px;
+
+  padding: 0;
+
+  list-style: none;
+  font-family: var(--font-primary);
+}
+
+
+@media screen and (max-width: 768px) {
+  .main {
+      padding-bottom: 40px;
+  }
+
+  .card {
+      width: 30rem;
+      max-width: 90%;
+      margin-bottom: 10px;
+  }
+
+  .cardlogo {
+      width: 25%;
+      margin: 5vw 3vw 5vw 6vw;
+  }
+
+  .card h1 {
+      padding: 0;
+
+      font-size: 1.2rem;
+  }
+
+  .cardtext {
+      width: 100%;
+      margin-right: 15px;
+  }
+
+  .card ul {
+      gap: 10px;
+
+      font-size: 0.8rem;
+  }
+}
