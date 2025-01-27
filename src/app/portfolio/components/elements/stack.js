@@ -6,6 +6,7 @@ import styles from "../../projects.module.css"
 import aftereffectsImg from "../../assets/stacklogos/aftereffects.svg"
 import blenderImg from "../../assets/stacklogos/blender.svg"
 import cssImg from "../../assets/stacklogos/css.svg"
+import contentfulImg from "../../assets/stacklogos/contentful.svg"
 import framerImg from "../../assets/stacklogos/motion.svg"
 import htmlImg from "../../assets/stacklogos/html.svg"
 import jsImg from "../../assets/stacklogos/javascript.svg"
@@ -13,6 +14,7 @@ import lottieImg from "../../assets/stacklogos/lottie.svg"
 import nextjsImg from "../../assets/stacklogos/nextjs.svg"
 import psImg from "../../assets/stacklogos/photoshop.svg"
 import reactImg from "../../assets/stacklogos/react.svg"
+import tailwindImg from "../../assets/stacklogos/tailwind.svg"
 import threejsImg from "../../assets/stacklogos/threejs.svg"
 import vercelImg from "../../assets/stacklogos/vercel.svg"
 
@@ -34,6 +36,11 @@ const itemConfig = {
     image: cssImg,
     alt: "CSS3 - Cascading Style Sheets",
     text: "CSS"
+  },
+  contentful: {
+    image: contentfulImg,
+    alt: "Contentful - headless CMS",
+    text: "Contentful"
   },
   motion: {
     image: framerImg,
@@ -69,6 +76,11 @@ const itemConfig = {
     image: reactImg,
     alt: "React - JavaScript library for user interfaces",
     text: "React"
+  },
+  tailwind: {
+    image: tailwindImg,
+    alt: "Tailwind CSS - CSS Utility Framework",
+    text: "Tailwind"
   },
   three: {
     image: threejsImg,

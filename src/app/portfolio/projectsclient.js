@@ -8,6 +8,7 @@ import SectionPlaceholder from "../components/mascot/sectionplaceholder";
 import arcadeImage from "./assets/hero-arcade.png"
 import petitImage from "./assets/hero-petit.png"
 import portfolioImage from "./assets/hero-portfolio.png"
+import legionImage from './assets/hero-legion.png'
 import projectsImg from '../assets/portfolioImg.svg';
 
 
@@ -68,6 +69,16 @@ export default function ProjectsClient () {
                 />
 
                 <ProjectCard 
+                    heroImage={legionImage}
+                    alt="American Legion Logo"
+                    projectName="American Legion - War Memorial Comission"
+                    techStack = {["nextjs", "contentful", "tailwind", "motion", "html", "css", "js"]}
+                    projectText = "A modern institutional website redesign for the American Legion War Memorial Commission. Built from scratch using Next.js and Contentful for headless CMS, the site features dynamic event scheduling, room reservation functionality and streamlined content updates. Optimized with server-side rendering and responsive design for seamless performance across all devices."
+                    viewWeb="https://www.alwmcsf.org/"
+                    viewCode="https://github.com/ivr-1/legion-byIlya"
+                />
+
+                <ProjectCard 
                     heroImage={petitImage}
                     alt="Food Delivery UI"
                     projectName="Le Petit Croissant Delivery"
@@ -83,7 +94,7 @@ export default function ProjectsClient () {
                     projectName="Animated Portfolio Website"
                     techStack = {["nextjs", "motion", "lottie", "aftereffects", "html", "css", "js"]}
                     projectText = "This website. A playful take on the traditional portfolio featuring an animated mascot, neumorphic design and fluid micro-interactions.  Built from scratch using Next.js, Motion, Lottie and After Effects. Features dynamic SSR for SEO and responsive design, optimized for seamless performance across mobile, tablet and desktop devices."
-                    viewCode="https://github.com/ivr-1/Hub-byIlya"
+                    viewCode="https://github.com/ivr-1/myhub-byIlya"
                 />
 
             </main>
