@@ -6,6 +6,7 @@ import styles from "../../projects.module.css"
 import aftereffectsImg from "../../assets/stacklogos/aftereffects.svg"
 import blenderImg from "../../assets/stacklogos/blender.svg"
 import cssImg from "../../assets/stacklogos/css.svg"
+import chartImg from '../../assets/stacklogos/chartjs.svg'
 import contentfulImg from "../../assets/stacklogos/contentful.svg"
 import framerImg from "../../assets/stacklogos/motion.svg"
 import htmlImg from "../../assets/stacklogos/html.svg"
@@ -16,6 +17,7 @@ import psImg from "../../assets/stacklogos/photoshop.svg"
 import reactImg from "../../assets/stacklogos/react.svg"
 import tailwindImg from "../../assets/stacklogos/tailwind.svg"
 import threejsImg from "../../assets/stacklogos/threejs.svg"
+import typeImg from "../../assets/stacklogos/typescript.svg"
 import vercelImg from "../../assets/stacklogos/vercel.svg"
 
 
@@ -36,6 +38,11 @@ const itemConfig = {
     image: cssImg,
     alt: "CSS3 - Cascading Style Sheets",
     text: "CSS"
+  },
+  chartjs: {
+    image: chartImg,
+    alt: "Chart.js - JavaScript Charting Library",
+    text: "ChartJS"
   },
   contentful: {
     image: contentfulImg,
@@ -86,6 +93,11 @@ const itemConfig = {
     image: threejsImg,
     alt: "Three.js - 3D graphics library",
     text: "Three.js"
+  },
+  type: {
+    image: typeImg,
+    alt: "TypeScript - JavaScript superset",
+    text: "TypeScript"
   },
   vercel: {
     image: vercelImg,

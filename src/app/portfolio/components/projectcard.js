@@ -68,7 +68,7 @@ const childVariants = {
 }
 
 
-export default function ProjectCard({heroImage, alt, projectName, techStack, projectText, viewWeb, viewCode}) {
+export default function ProjectCard({heroImage, alt, projectName, techStack, projectText, viewWeb, viewCode, spotlight}) {
   return (
     <motion.article
       className={styles.projectcard}
@@ -77,9 +77,8 @@ export default function ProjectCard({heroImage, alt, projectName, techStack, pro
       animate={"extruded"}
     >
 
-      <motion.section variants={childVariants} className={styles.projectimage}>
-        <div className={styles.imageWrapper}>
-
+      <motion.section variants={childVariants} className={styles.projectimage} onClick={() => viewWeb && window.open(viewWeb, '_blank', 'noopener,noreferrer')}      >
+        <div className={spotlight? styles.spotlightWrapper : styles.imageWrapper}>
           <Image
             src={heroImage}
             alt={alt}

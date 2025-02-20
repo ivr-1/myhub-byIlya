@@ -6,6 +6,7 @@ import useLayoutConfig from "../components/useLayoutConfig";
 import SectionPlaceholder from "../components/mascot/sectionplaceholder";
 
 import arcadeImage from "./assets/hero-arcade.png"
+import dashboardImage from "./assets/hero-healthdash.png"
 import petitImage from "./assets/hero-petit.png"
 import portfolioImage from "./assets/hero-portfolio.png"
 import legionImage from './assets/hero-legion.png'
@@ -59,6 +60,7 @@ export default function ProjectsClient () {
                 />      
 
                 <ProjectCard 
+                    spotlight
                     heroImage={arcadeImage}
                     alt="3D Arcade Machines"
                     projectName="3D Retro Arcade / Classic Mobile Arcade"
@@ -79,6 +81,16 @@ export default function ProjectsClient () {
                 />
 
                 <ProjectCard 
+                    heroImage={dashboardImage}
+                    alt="Medical Dashboard"
+                    projectName="Healthcare Patient Dashboard"
+                    techStack = {["nextjs", "chartjs",  "tailwind",  "vercel", "type", "html", "css"]}
+                    projectText = "A clean, responsive medical dashboard for patient data management, implemented as a pixel-perfect match of the provided design system. Features vital monitoring via graph visualization and dynamic patient profiles that scale based on API data. Built in TypeScript and Tailwind CSS, with dashboard components automatically building and updating based on incoming patient information."
+                    viewWeb="https://dashboard.byilya.com"
+                    viewCode="https://github.com/ivr-1/medicaldash-byilya"
+                />
+
+                <ProjectCard 
                     heroImage={petitImage}
                     alt="Food Delivery UI"
                     projectName="Le Petit Croissant Delivery"
@@ -89,6 +101,7 @@ export default function ProjectsClient () {
                 />
                 
                 <ProjectCard 
+                    spotlight
                     heroImage={portfolioImage}
                     alt="Animated mascot in a hat holding a cog, a lightning in a bottle and a picture frame"
                     projectName="Animated Portfolio Website"
